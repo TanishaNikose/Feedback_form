@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(166, 221, 228);
+  color: rgb(32, 145, 143);
+  font-size: large;
+}
+/* box-sizing: border-box; makes sure that the total width and height of an element include its padding and border, not just the content. This way, when you set the width or height, you know exactly how big the element will be on the page. */
+
+.MyForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: space-evenly; */
+  align-items: space-between; /*ye smjhna h*/
+  padding: 2rem; /*ye smjhna h*/
+  margin: 2rem auto; /*ye smjhna h*/
+  max-width: 600px; /*ye smjhna h*/
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  /* 
+box-shadow: 0 0 10px rgba(0,0,0,0.1); creates a soft, light gray shadow evenly around an element, making it look slightly lifted off the page.
+
+0 (horizontal offset): The shadow does not shift left or right; it stays directly under the element.
+
+0 (vertical offset): The shadow does not shift up or down; it stays directly under the element.
+
+10px (blur radius): The shadow is blurred by 10 pixels, making it spread out and soften around the edges.
+
+rgba(0,0,0,0.1) (color): The shadow is black with 10% opacity, making it a very light gray color. */
+
+  /* font-weight: normal; */
+  /* text-align: left; */
+}
+
+.form h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #004d40;
+}
+
+label {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #004d40;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 0.5em;
+  border: 1px solid #003366;
+  border-radius: 5px;
+  outline: none;
+  caret-color: black;
+  font-size: 16px;
+  color: #333;
+  /*  input[type ="text"], means the input tag which have type of text
+ input[type ="email"] means the input tag which have type of email , This is the area where user can type the content */
+}
+/* css meri nhi  */
+textarea {
+  resize: vertical;
+  height: 100px;
+  /* resize: vertical;: This lets users adjust the height of the element by dragging its bottom edge, but they can't change its width.
+    It’s commonly used with <textarea> elements to allow vertical resizing while keeping the width fixed. we can also use resize: horizontal; in this we can only change the width, not height. */
+}
+
+/* css meri nhi  */
+.Rating label {
+  /* .Rating label targeting to all the label which is inside the Rating */
+  display: inline-flex;
+  align-items: center;
+  margin-right: 1rem;
+
+  /* display: inline-flex; makes an element a flexible container that stays on the same line as other elements. */
+}
+/* css meri nhi  */
+input [type="radio"] {
+  margin-left: 0.5rem;
+}
+
+/* css meri h */
+button {
+  padding: 0.75em 1.5em;
+  border: none; 
+
+  /* when you use border: none;, it removes both the visible border and its space. The element will have no border line or border space around it. It effectively collapses any border space to zero. */
+
+  border-radius: 5px; 
+  background-color: #004d40;
+  /* outline:none; */
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  /* cursor: pointer; changes the cursor to a hand shape when hovering over the element. This is commonly used to indicate that the element is clickable, such as buttons or links. */
+}
+
+button:hover {
+    /* button:hover {} is a CSS selector that applies styles to a <button> element when the user hovers their mouse over it. */
+    background-color: #003366;
+}
+
+.SubmittedData {
+  margin-top: 2em;
+  padding: 1em;
+  background-color: #e8f5e9;
+  border: 1px solid #004d40;
+  border-radius: 5px;
+  color: #004d40;
+  width: 100%;
+}
+
+.SubmittedData h2 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+.SubmittedData p {
+  margin-bottom: 0.5em;
+  font-size: 1.1em;
+}
